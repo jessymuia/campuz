@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campus Cyber Shield - Digital Safety for Students</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- AOS Animation Library -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <!-- Google Fonts for Montserrat -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Modern Preloader -->
+  <div class="loading-screen" id="loadingScreen">
+    <div class="modern-loader">
+      <div class="loader-circle"></div>
+      <div class="loader-circle"></div>
+      <div class="loader-circle"></div>
+      <div class="loader-circle"></div>
+      <div class="loader-text">
+        <h3>CAMPUS CYBER SHIELD</h3>
+        <p>Securing Your Digital Campus<span class="dots"></span></p>
+      </div>
+    </div>
+  </div>
+<nav class="navbar" role="navigation" aria-label="Main navigation">
+  <div class="nav-container">
+    <div class="nav-logo">
+      <h2>Campus Cyber Shield</h2>
+    </div>
+    <div class="nav-menu" id="navMenu">
+      <a href="index.html" class="nav-link active">Home</a>
+      <a href="resources.html" class="nav-link">Resources</a>
+      <a href="report-incident.html" class="nav-link">Report Incident</a>
+      <a href="blog.html" class="nav-link">Blogs</a>
+      <a href="glossary.html" class="nav-link">Glossary</a>
+      
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="navMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+  <main style="margin-top: 80px; padding: 2rem;">
+    <div class="container">
+      <h1>Report a Security Incident</h1>
+      <p>Help us protect the campus community by reporting suspicious activities</p>
+
+      <div class="report-form">
+        <form
+  id="incidentForm"
+  aria-label="Report a security incident"
+  action="https://formspree.io/f/xwpryvkr"
+  method="POST"
+>
+  <div class="form-feedback" aria-live="polite"></div>
+
+  <div class="form-group">
+    <label for="incidentType">Type of Incident *</label>
+    <select id="incidentType" name="incidentType" required>
+      <option value="">Select an option</option>
+      <option value="phishing">Phishing Email/SMS</option>
+      <option value="scam">Online Scam</option>
+      <option value="social-media">Social Media Impersonation</option>
+      <option value="harassment">Cyberbullying/Harassment</option>
+      <option value="other">Other</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label for="incidentDate">When did this happen?</label>
+    <input type="date" id="incidentDate" name="incidentDate">
+  </div>
+
+  <div class="form-group">
+    <label for="description">What happened? *</label>
+    <textarea id="description" name="description" placeholder="Please describe the incident in detail..." required></textarea>
+  </div>
+
+  <div class="form-group">
+    <label for="contact">Contact Information (Optional)</label>
+    <input type="email" id="contact" name="email" placeholder="email@example.com">
+    <small>We'll only contact you if we need more information</small>
+  </div>
+
+  <div class="privacy-note">
+    <strong>🔒 Privacy Note:</strong> Your report is anonymous. We will not share your personal information without your consent.
+  </div>
+
+  <input type="hidden" name="_subject" value="New Incident Report - Campus Cyber Shield">
+  <input type="hidden" name="_template" value="table">
+
+  <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Report</button>
+</form>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Campus Cyber Shield. Protecting students in the digital space.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="preloader.js"></script> <!-- Add this first -->
+  <script src="core.js"></script>
+  <script src="quiz.js"></script>
+  <script src="forms.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campus Cyber Shield - Digital Safety for Students</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- AOS Animation Library -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <!-- Google Fonts for Montserrat -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Modern Preloader -->
+  <div class="loading-screen" id="loadingScreen">
+    <div class="modern-loader">
+      <div class="loader-circle"></div>
+      <div class="loader-circle"></div>
+      <div class="loader-circle"></div>
+      <div class="loader-circle"></div>
+      <div class="loader-text">
+        <h3>CAMPUS CYBER SHIELD</h3>
+        <p>Securing Your Digital Campus<span class="dots"></span></p>
+      </div>
+    </div>
+  </div>
+
+<nav class="navbar" role="navigation" aria-label="Main navigation">
+  <div class="nav-container">
+    <div class="nav-logo">
+      <h2>Campus Cyber Shield</h2>
+    </div>
+    <div class="nav-menu" id="navMenu">
+      <a href="index.html" class="nav-link active">Home</a>
+      <a href="resources.html" class="nav-link">Resources</a>
+      <a href="report-incident.html" class="nav-link">Report Incident</a>
+      <a href="blog.html" class="nav-link">Blogs</a>
+      <a href="glossary.html" class="nav-link">Glossary</a>
+      
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="navMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<main>
+  <section class="hero">
+    <div class="hero-bg-overlay"></div>
+    <div class="container">
+      <div class="hero-content" data-aos="fade-up" data-aos-delay="100">
+        <h1>Cyber Shield for Digital Learners</h1>
+        <p>Empowering students with cutting-edge cybersecurity knowledge, real-time threat alerts, and interactive learning resources for a safer digital campus experience.</p>
+        <div class="hero-buttons">
+          <a href="resources.html" class="btn btn-primary pulse">
+            <span>Explore Resources</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M9 18l6-6-6-6"/>
+            </svg>
+          </a>
+          <a href="report-incident.html" class="btn btn-secondary">
+            <span>Report Incident</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="alerts-section">
+    <div class="container">
+      <h2>🔴 Current Threat Alerts</h2>
+      <div class="alerts-grid" id="threatAlerts">
+        <!-- Alert cards will be loaded dynamically -->
+      </div>
+    </div>
+  </section>
+
+  <section class="resources-section">
+    <div class="container">
+      <h2 data-aos="fade-up">📚 Essential Cyber Guides</h2>
+      <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Interactive resources to boost your cybersecurity skills</p>
+      <div class="resources-grid">
+        <div class="resource-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="card-icon">🔐</div>
+          <h3>Password Security</h3>
+          <p>Master the art of creating and managing unbreakable passwords</p>
+          <a href="resources.html#passwords" class="btn-link">Explore Guide →</a>
+        </div>
+        <div class="resource-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="card-icon">🎣</div>
+          <h3>Phishing Awareness</h3>
+          <p>Learn to identify and avoid sophisticated phishing attacks</p>
+          <a href="resources.html#phishing" class="btn-link">Explore Guide →</a>
+        </div>
+        <div class="resource-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="card-icon">📱</div>
+          <h3>Social Media Safety</h3>
+          <p>Protect your digital identity across all social platforms</p>
+          <a href="resources.html#social-media" class="btn-link">Explore Guide →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Meet Our Team Section -->
+  <section id="team" class="team-section" data-aos="fade-up">
+    <div class="container">
+      <h2>Meet Our Team</h2>
+      <p class="section-subtitle">We're a passionate group of cybersecurity enthusiasts making digital safety accessible to everyone</p>
+      
+      <div class="team-grid">
+        <!-- Team Member 1 -->
+        <div class="team-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="team-avatar">F</div>
+          <h3>Faraj</h3>
+          <p class="team-role">Senior Developer & Group Leader</p>
+          <p class="team-description">Faraj brings creativity and precision to every project — ensuring performance and quality code.</p>
+        </div>
+
+        <!-- Team Member 2 -->
+        <div class="team-card" data-aos="fade-up" data-aos-delay="150">
+          <div class="team-avatar">J</div>
+          <h3>Jessy Muia</h3>
+          <p class="team-role">Developer & Tester</p>
+          <p class="team-description">Jessy ensures each feature is tested thoroughly — maintaining stability and user satisfaction.</p>
+        </div>
+
+        <!-- Team Member 3 -->
+        <div class="team-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="team-avatar">D</div>
+          <h3>Dancun</h3>
+          <p class="team-role">Assistant & Presenter</p>
+          <p class="team-description">Dancun assists with coordination and brings life to presentations — making ideas connect effortlessly.</p>
+        </div>
+
+        <!-- Team Member 4 -->
+        <div class="team-card" data-aos="fade-up" data-aos-delay="250">
+          <div class="team-avatar">W</div>
+          <h3>Winky Shiundu</h3>
+          <p class="team-role">Researcher</p>
+          <p class="team-description">Winky focuses on exploring innovative solutions and market trends to support the team's goals.</p>
+        </div>
+
+        <!-- Team Member 5 -->
+        <div class="team-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="team-avatar">D</div>
+          <h3>David Keya</h3>
+          <p class="team-role">Developer</p>
+          <p class="team-description">David contributes through in-depth analysis and strategic insights that guide development decisions.</p>
+        </div>
+
+        <!-- Team Member 6 -->
+        <div class="team-card" data-aos="fade-up" data-aos-delay="350">
+          <div class="team-avatar">C</div>
+          <h3>Catherine Abuko</h3>
+          <p class="team-role">Researcher</p>
+          <p class="team-description">Catherine focuses on exploring innovative solutions and market trends to support the team's goals.</p>
+        </div>
+
+        <!-- Team Member 7 -->
+        <div class="team-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="team-avatar">V</div>
+          <h3>Victor Mukavale</h3>
+          <p class="team-role">Developer</p>
+          <p class="team-description">Victor brings creativity and precision to every project — ensuring performance and quality code.</p>
+        </div>
+
+        <!-- Team Member 8 -->
+        <div class="team-card" data-aos="fade-up" data-aos-delay="450">
+          <div class="team-avatar">M</div>
+          <h3>Melkizedeck Wayo</h3>
+          <p class="team-role">Researcher</p>
+          <p class="team-description">Melkizedeck ensures each feature is researched thoroughly — maintaining stability and project satisfaction.</p>
+        </div>
+
+        <!-- Team Member 9 -->
+        <div class="team-card" data-aos="fade-up" data-aos-delay="500">
+          <div class="team-avatar">L</div>
+          <h3>Lincoln Chanzo</h3>
+          <p class="team-role">Developer</p>
+          <p class="team-description">Lincoln focuses on efficient code and ensuring every feature runs smoothly for a seamless user experience.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cyber Quiz CTA -->
+  <section class="quiz-cta">
+    <div class="container">
+      <div class="quiz-cta-content" data-aos="fade-up">
+        <h2>Test Your Cyber Knowledge</h2>
+        <p>Take our 2-minute quiz to see how cyber-smart you are!</p>
+        <button class="btn btn-primary" onclick="showQuizModal()" aria-haspopup="dialog" aria-controls="quizModal">Start Quiz</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quiz Modal -->
+  <div id="quizModal" class="quiz-modal" role="dialog" aria-modal="true" aria-labelledby="quizTitle">
+    <div class="quiz-modal-content" id="quizContent">
+      <!-- Quiz questions will be rendered here by quiz.js -->
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <p>&copy; 2025 Campus Cyber Shield. Protecting students in the digital space.</p>
+    <div class="social-links">
+      <a href="#" aria-label="Twitter">Twitter</a>
+      <a href="#" aria-label="Instagram">Instagram</a>
+      <a href="#" aria-label="WhatsApp Channel">WhatsApp Channel</a>
+    </div>
+  </div>
+</footer>
+
+<!-- AOS JS should be loaded before your scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="preloader.js"></script> <!-- Add this first -->
+  <script src="core.js"></script>
+  <script src="quiz.js"></script>
+  <script src="forms.js"></script>
+</body>
+</html>
